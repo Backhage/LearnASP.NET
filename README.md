@@ -36,6 +36,8 @@ Learning resources for my focused learing on ASP.NET
 - [Typescript official docs](https://www.typescriptlang.org/docs/home.html)
 - [Entity Framework Documentation](https://docs.microsoft.com/en-us/ef/#pivot=entityfmwk)
 - [Microsoft's introduction to Entity Framework](https://msdn.microsoft.com/en-us/library/aa937723(v=vs.113).aspx)
+- [Bootstrap front-end library](https://getbootstrap.com/)
+- [jQuery JavaScript library](https://jquery.com/)
 
 ## Tools
 - [.NET Core SDK for Windows](https://www.microsoft.com/net/download/windows)
