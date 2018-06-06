@@ -43,3 +43,8 @@ Learning resources for my focused learing on ASP.NET
 - [.NET Core SDK for Windows](https://www.microsoft.com/net/download/windows)
 - [Visual Studio Code](https://code.visualstudio.com/)
 
+## Sample Site
+The free online book [The little ASP.NET Core Book](https://www.recaffeinate.co/book/) is a
+step by step guide, with explanations, on how to create a simple ASP.NET site from scratch.
+Code is available here under LittleAspNetCoreBook.
+
