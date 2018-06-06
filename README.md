@@ -33,6 +33,7 @@ Learning resources for my focused learing on ASP.NET
 
 ## Reading material
 - [The little ASP.NET Core Book](https://www.recaffeinate.co/book/)
+- [A lesson in ASP.NET DI Scope](https://dotnetcoretutorials.com/2018/03/20/cannot-consume-scoped-service-from-singleton-a-lesson-in-asp-net-core-di-scopes/)
 - [Typescript official docs](https://www.typescriptlang.org/docs/home.html)
 - [Entity Framework Documentation](https://docs.microsoft.com/en-us/ef/#pivot=entityfmwk)
 - [Microsoft's introduction to Entity Framework](https://msdn.microsoft.com/en-us/library/aa937723(v=vs.113).aspx)
@@ -47,4 +48,8 @@ Learning resources for my focused learing on ASP.NET
 The free online book [The little ASP.NET Core Book](https://www.recaffeinate.co/book/) is a
 step by step guide, with explanations, on how to create a simple ASP.NET site from scratch.
 Code is available here under LittleAspNetCoreBook.
+
+*Note* The example in the book where Entity Framework is used to inject the ApplicationDbContext into
+the TodoItemService singleton does not work for me. I had to make the TodoItemService scoped instead
+of Singleton.
 
