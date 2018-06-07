@@ -49,7 +49,3 @@ The free online book [The little ASP.NET Core Book](https://www.recaffeinate.co/
 step by step guide, with explanations, on how to create a simple ASP.NET site from scratch.
 Code is available here under LittleAspNetCoreBook.
 
-*Note* The example in the book where Entity Framework is used to inject the ApplicationDbContext into
-the TodoItemService singleton does not work for me. I had to make the TodoItemService scoped instead
-of Singleton.
-
