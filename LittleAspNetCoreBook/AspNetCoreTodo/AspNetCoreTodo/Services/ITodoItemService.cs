@@ -1,4 +1,5 @@
 using AspNetCoreTodo.Models;
+using System;
 using System.Threading.Tasks;
 
 namespace AspNetCoreTodo.Services
@@ -7,5 +8,6 @@ namespace AspNetCoreTodo.Services
     {
         Task<TodoItem[]> GetIncompleteItemsAsynch();
         Task<bool> AddItemAsync(TodoItem newItem);
+        Task<bool> MarkDoneAsync(Guid id);
     }
 }
