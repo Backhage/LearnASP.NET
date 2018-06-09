@@ -50,3 +50,17 @@ The free online book [The little ASP.NET Core Book](https://www.recaffeinate.co/
 step by step guide, with explanations, on how to create a simple ASP.NET site from scratch.
 Code is available here under LittleAspNetCoreBook.
 
+**NOTE:** There have been some updates to ASP.NET Core 2.1 in regards to Identity and Roles.
+Everywhere where it in the book says ApplicationUser I had to use IdentityUser instead.
+Also, the RoleManager is no longer available as a service by default. See [this post](https://stackoverflow.com/questions/50426278/how-to-use-roles-in-asp-net-core-2-1) on StackOverflow for some tips.
+I was not able to get the Authorize attribute with Roles parameter to work as described in the book, even though the
+UserManager correctly identifies the user as having the administrator role.
+
+```csharp
+[Authorize(Roles = "Administrator"] // This did not work for me
+public class ManageUsersController : Controller
+{
+   ...
+}
+```
+
