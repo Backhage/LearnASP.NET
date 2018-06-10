@@ -65,4 +65,4 @@ public class ManageUsersController : Controller
 ```
 
 **NOTE:** According to the book the unit test template should add everything needed. However I had to add two packages to the test project 
-in order to get the code to compile. These were Microsoft.AspNetCore.Identity.EntityFrameworkCore and Microsoft.EntityFrameworkCore.InMemory.
+in order to get the code to compile. These were `Microsoft.AspNetCore.Identity.EntityFrameworkCore` and `Microsoft.EntityFrameworkCore.InMemory`.
