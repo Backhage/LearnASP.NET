@@ -72,6 +72,6 @@ in order to get the code to compile. These were `Microsoft.AspNetCore.Identity.E
 // I had to change the assert to look like this
 Assert.Equal(
     "http://localhost:8888/Identity/Account/Login?ReturnUrl=%2Ftodo",
-    respons.Headers.Location.ToString());
+    response.Headers.Location.ToString());
 ```
 
