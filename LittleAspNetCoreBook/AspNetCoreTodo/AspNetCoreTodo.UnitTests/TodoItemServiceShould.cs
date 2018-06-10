@@ -7,7 +7,7 @@ using System;
 using System.Threading.Tasks;
 using Xunit;
 
-namespace AspNetCoreTode.UnitTests
+namespace AspNetCoreTodo.UnitTests
 {
     public class TodoItemServiceShould
     {
