@@ -64,5 +64,14 @@ public class ManageUsersController : Controller
 }
 ```
 
-**NOTE:** According to the book the unit test template should add everything needed. However I had to add two packages to the test project 
+**NOTE:** In the Unittest chapter: According to the book the unit test template should add everything needed. However I had to add two packages to the test project 
 in order to get the code to compile. These were `Microsoft.AspNetCore.Identity.EntityFrameworkCore` and `Microsoft.EntityFrameworkCore.InMemory`.
+
+**NOTE:** In the Integration test chapter: I had to manually add the following packages `Microsoft.Extensions.Configuaration.Json` and `Microsoft.AspNetCore.App`. Also the expected URL in the test in the book actually differs from the actual URL returned.
+```csharp
+// I had to change the assert to look like this
+Assert.Equal(
+    "http://localhost:8888/Identity/Account/Login?ReturnUrl=%2Ftodo",
+    respons.Headers.Location.ToString());
+```
+
