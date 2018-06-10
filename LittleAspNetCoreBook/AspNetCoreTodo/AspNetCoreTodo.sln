@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreTodo", "AspNetCor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreTodo.UnitTests", "AspNetCoreTodo.UnitTests\AspNetCoreTodo.UnitTests.csproj", "{2121B729-2CEA-4315-A604-FE7E45E897F0}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCoreTodo.IntegrationTests", "AspNetCoreTodo.IntegrationTests\AspNetCoreTodo.IntegrationTests.csproj", "{24FD1694-5FB5-4E39-A202-8D9BBF36641A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2121B729-2CEA-4315-A604-FE7E45E897F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2121B729-2CEA-4315-A604-FE7E45E897F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2121B729-2CEA-4315-A604-FE7E45E897F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24FD1694-5FB5-4E39-A202-8D9BBF36641A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24FD1694-5FB5-4E39-A202-8D9BBF36641A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24FD1694-5FB5-4E39-A202-8D9BBF36641A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24FD1694-5FB5-4E39-A202-8D9BBF36641A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
