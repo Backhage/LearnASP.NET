@@ -12,22 +12,26 @@ Learning resources for my focused learing on ASP.NET
 3. Sample site
    
    Create a sample site by following a step-by-step guide or tutorial.
-4. Domain Model
+4. Requirements for The Record Collector application
+
+   Write a small requirement document for the record collector application.
+
+5. Architecture and Domain Model
    
    Design the core domain model for the "Record Collector" application.
-5. Core implementation
+6. Core implementation
    
    Implement core functionality. Focus should not be on UI or persistence.
-6. Core implementation continued
+7. Core implementation continued
    
    Finish up the implementation of the core model.
-7. UI Design
+8. UI Design
    
    Add support for working with the core model via a web UI.
-8. Persistence
+9. Persistence
    
    Add persistence support.
-9. (Optional) Multi user
+10. (Optional) Multi user
    
    Add support for multiple users.
 

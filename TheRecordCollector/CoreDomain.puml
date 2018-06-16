@@ -1,0 +1,31 @@
+The Record Collector helps you keep track of your vinyl records. There are
+three types of vinyl records, Long Play (LP), Extended Play (EP), and singles.
+
+All types of vinyl records have two sides, A and B. On each side there is one
+or more tracks. The most common scenario is a 1-to-1 mapping between a record
+and an artist, but it is also not uncommon with collections where several
+artists perform or singles with one artist on side A and another on side B. 
+Therefore the Record class does not have an explicit Artist field, but rather
+the artists is the aggregate of the artists performing on the tracks that
+are on the record.
+
+Both the Record and the Track classes are value objects. They are pure
+containers of the data and do not operate on it.
+
+@startuml "RecordCollector Core Model
+class Record {
+    Title: string
+    Year: integer
+    Tracks: List<Track>
+}
+
+class Track {
+    Artist: string
+    GuestArtists: string
+    Title: string
+    Length: TimeSpan
+}
+
+Record->Track
+
+@enduml
