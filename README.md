@@ -9,9 +9,10 @@ Learning resources for my focused learing on ASP.NET
    
    Ensure all required tools and resources for devoloping and hosting a database backed ASP.NET
    web application are available.
-3. Sample site
+3. Sample sites
    
-   Create a sample site by following a step-by-step guide or tutorial.
+   Create sample sites by following step-by-step guides or tutorials.
+   Be sure to understand the details and how these can be applied when creating your own web applications.
 4. Requirements for The Record Collector application
 
    Write a small requirement document for the record collector application.
@@ -37,6 +38,7 @@ Learning resources for my focused learing on ASP.NET
 
 ## Reading material
 - [The little ASP.NET Core Book](https://www.recaffeinate.co/book/)
+- [Pro ASP.NET Core MVC](https://www.apress.com/gp/book/9781484231494)
 - [A lesson in ASP.NET DI Scope](https://dotnetcoretutorials.com/2018/03/20/cannot-consume-scoped-service-from-singleton-a-lesson-in-asp-net-core-di-scopes/)
 - [Typescript official docs](https://www.typescriptlang.org/docs/home.html)
 - [Entity Framework Documentation](https://docs.microsoft.com/en-us/ef/#pivot=entityfmwk)
@@ -50,6 +52,7 @@ Learning resources for my focused learing on ASP.NET
 - [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Sample Site
+### Created using "The little ASP.NET Core Book"
 The free online book [The little ASP.NET Core Book](https://www.recaffeinate.co/book/) is a
 step by step guide, with explanations, on how to create a simple ASP.NET site from scratch.
 Code is available here under LittleAspNetCoreBook.
@@ -79,3 +82,6 @@ Assert.Equal(
     response.Headers.Location.ToString());
 ```
 
+### Created using "Pro ASP.NET Core MVC 2"
+The first sample site from this book is called "PartyInvites". It is built using the MVC template, however upcoming sample sites will be built from scratch.
+Code for "PartyInvites" can be found under the PartyInvites folder.
