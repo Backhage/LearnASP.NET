@@ -1,16 +1,7 @@
-﻿@model Razor.Models.Product
+﻿@model Product
 @{
-    Layout = null;
+    Layout = "_BasicLayout";
+    ViewBag.Title = "Product Name";
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
-</head>
-<body>
-    Content goes here
-</body>
-</html>
+Product Name: @Model.Name
