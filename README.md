@@ -1,5 +1,5 @@
 # LearnASP.NET
-Learning resources for my focused learing on ASP.NET
+Learning resources for my focused learning on ASP.NET
 
 ## Learning Plan by Week
 1. Reading material
@@ -39,6 +39,8 @@ Learning resources for my focused learing on ASP.NET
 ## Reading material
 - [The little ASP.NET Core Book](https://www.recaffeinate.co/book/)
 - [Pro ASP.NET Core MVC](https://www.apress.com/gp/book/9781484231494)
+- [LibMan Bower replacement](https://blogs.msdn.microsoft.com/webdev/2018/04/17/library-manager-client-side-content-manager-for-web-apps/)
+- [Packman client side package manager](https://github.com/madskristensen/Packman)
 - [A lesson in ASP.NET DI Scope](https://dotnetcoretutorials.com/2018/03/20/cannot-consume-scoped-service-from-singleton-a-lesson-in-asp-net-core-di-scopes/)
 - [Typescript official docs](https://www.typescriptlang.org/docs/home.html)
 - [Entity Framework Documentation](https://docs.microsoft.com/en-us/ef/#pivot=entityfmwk)
@@ -83,5 +85,15 @@ Assert.Equal(
 ```
 
 ### Created using "Pro ASP.NET Core MVC 2"
+#### PartyInvites
 The first sample site from this book is called "PartyInvites". It is built using the MVC template, however upcoming sample sites will be built from scratch.
 Code for "PartyInvites" can be found under the PartyInvites folder.
+#### Razor
+The second sample site are intended to show Razor features and is named 'Razor'. Here the site is created using a blank template.
+Razor is the viewengine that parses .cshtml views and outputs the HTML that is sent to the client. It replaces the C# code in the
+views with HTML that the browser is able to parse.
+#### WorkingWithVisualStudio
+This sample site is designed to show how to efficiently work with Visual Studio during development of your ASP.NET Core MVC project.
+**NOTE:** The book shows how to use a tool called Bower for managing client side packages. Bower is deprecated and the replacement
+seems to be a tool called Library manager, or LibMan for short. I have added a link to an info page on LibMan and will try to use
+that instead of Bower for the sample sites.
