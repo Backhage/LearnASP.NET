@@ -1,7 +1,19 @@
-﻿@model Product
+﻿@model Product[]
 @{
-    Layout = "_BasicLayout";
     ViewBag.Title = "Product Name";
 }
 
-Product Name: @Model.Name
+<table>
+    <thead>
+        <tr><th>Name</th><th>Price</th></tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Name</td>
+                <td>@($"{product.Price:C2}")</td>
+            </tr>
+        }
+    </tbody>
+</table>

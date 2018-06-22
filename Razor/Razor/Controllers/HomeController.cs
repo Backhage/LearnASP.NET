@@ -7,15 +7,14 @@ namespace Razor.Controllers
     {
         public IActionResult Index()
         {
-            var myProduct = new Product
+            var products = new[]
             {
-                ProductID = 1,
-                Name = "Kayak",
-                Description = "A boat for one person",
-                Category = "Watersports",
-                Price = 275M
+                new Product {Name = "Kayak", Price = 275m},
+                new Product {Name = "Lifejacket", Price = 48.95m},
+                new Product {Name = "Soccer ball", Price = 19.50m},
+                new Product {Name = "Corner flag", Price = 34.95m}
             };
-            return View(myProduct);
+            return View(products);
         }
     }
 }
