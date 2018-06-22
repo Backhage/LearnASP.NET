@@ -9,9 +9,12 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Working with Visual Studio</title>
+    <link rel="stylesheet" href="~/css/bundle.min.css" />
+    <script src="~/js/bundle.min.js"></script>
 </head>
 <body>
     <h3>Products</h3>
+    <p>Request Time: @DateTime.Now.ToString("HH:mm:ss")</p>
     <table>
         <thead>
             <tr><th>Name</th><th>Price</th></tr>

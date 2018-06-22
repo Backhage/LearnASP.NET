@@ -110,3 +110,6 @@ if (env.IsDevelopment())
     app.UseDeveloperExceptionPage(); // Comment out this line to see the effect 
 }
 ```
+
+**NOTE:** If you want to use Typescript instead of Javascript you can do that. Visual Studio has great support for Typescript so you can treat the TS files
+just like you would treat JS files. The compilation from TS to JS happen automatically without any user interaction.
