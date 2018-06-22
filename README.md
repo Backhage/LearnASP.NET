@@ -94,6 +94,19 @@ Razor is the viewengine that parses .cshtml views and outputs the HTML that is s
 views with HTML that the browser is able to parse.
 #### WorkingWithVisualStudio
 This sample site is designed to show how to efficiently work with Visual Studio during development of your ASP.NET Core MVC project.
+
 **NOTE:** The book shows how to use a tool called Bower for managing client side packages. Bower is deprecated and the replacement
 seems to be a tool called Library manager, or LibMan for short. I have added a link to an info page on LibMan and will try to use
-that instead of Bower for the sample sites.
+that instead of Bower for the sample sites. UPDATE: LibMan is not available in the Visual Studio version I am using now, 15.7.4 and
+neither is Bower. I will try to use npm instead.
+
+**NOTE:** The book instructs you to enable the developer exception page during development. However in later versions of ASP.NET Core this
+is enabled by default, so there is no need to enable it. If you want to see how it looks without the developer exception page you can
+comment out this line:
+
+```csharp
+if (env.IsDevelopment())
+{
+    app.UseDeveloperExceptionPage(); // Comment out this line to see the effect 
+}
+```

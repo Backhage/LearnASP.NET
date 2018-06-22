@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WorkingWithVisualStudio.Models;
+using System.Linq;
 
 namespace WorkingWithVisualStudio.Controllers
 {
@@ -7,7 +8,7 @@ namespace WorkingWithVisualStudio.Controllers
     {
         public IActionResult Index()
         {
-            return View(SimpleRepository.SharedRepository.Products);
+            return View(SimpleRepository.SharedRepository.Products.Where(p => p.Price < 50));
         }
     }
 }
