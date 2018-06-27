@@ -1,19 +1,5 @@
 [
   {
-    "outputFileName": "wwwroot/css/bundle.css",
-    "inputFiles": [
-      "wwwroot/css/first.css",
-      "wwwroot/css/second.css"
-    ]
-  },
-  {
-    "outputFileName": "wwwroot/js/bundle.js",
-    "inputFiles": [
-      "wwwroot/js/third.js",
-      "wwwroot/js/fourth.js"
-    ]
-  },
-  {
     "outputFileName": "wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
     "inputFiles": [
       "node_modules/bootstrap/dist/css/bootstrap.min.css"
