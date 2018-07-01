@@ -113,3 +113,10 @@ if (env.IsDevelopment())
 
 **NOTE:** If you want to use Typescript instead of Javascript you can do that. Visual Studio has great support for Typescript so you can treat the TS files
 just like you would treat JS files. The compilation from TS to JS happen automatically without any user interaction.
+
+#### SportStore
+This is a sample site that quite closely resembles a real production site. It includes a database, user login, administration etc.
+It is written from a blank template. All code except the absolute basic is written manually.
+
+**NOTE:** I have used ASP.NET Core 2.1 instead of 2.0. The book informs you to add a DotNetCliToolReference for the Entity Framework command line tools
+to your project file. This is however not necessary when using version 2.1 of the framework since it is included by default in the bundle.
