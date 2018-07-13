@@ -73,6 +73,13 @@ public class ManageUsersController : Controller
 }
 ```
 
+**UPDATE:** I received a tip on how to make the authorization work again (thanks @RoBak42). It should now work as expected in the code in this repository. What I had to do was to add the line
+
+```csharp
+services.AddScoped<IUserClaimsPrincipalFactory<IdentityUser>, UserClaimsPrincipalFactory<IdentityUser, IdentityRole>>();
+```
+to the startup.cs file.
+
 **NOTE:** In the Unittest chapter: According to the book the unit test template should add everything needed. However I had to add two packages to the test project 
 in order to get the code to compile. These were `Microsoft.AspNetCore.Identity.EntityFrameworkCore` and `Microsoft.EntityFrameworkCore.InMemory`.
 
