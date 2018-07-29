@@ -127,3 +127,8 @@ It is written from a blank template. All code except the absolute basic is writt
 
 **NOTE:** I have used ASP.NET Core 2.1 instead of 2.0. The book informs you to add a DotNetCliToolReference for the Entity Framework command line tools
 to your project file. This is however not necessary when using version 2.1 of the framework since it is included by default in the bundle.
+
+**NOTE:** This is a really large sample site. It throws you in on the deep side
+of the pool and forces you through a lot of new concepts. If you are not pretty
+well familiar with ASP.NET you will have a tough time following along. But the
+author promises to go through all the new concepts in detail in later chapters.
