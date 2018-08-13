@@ -134,3 +134,5 @@ well familiar with ASP.NET you will have a tough time following along. But the
 author promises to go through all the new concepts in detail in later chapters.
 
 **NOTE:** There is a bad bug in the IdentitySeedData.cs code in the book. It uses the *FindByIdAsync* method to try to find the admin user in the database. However, it uses the admin username for lookup, which has the effect that the lookup always fails. The correct method to use is *FindByNameAsync*.
+
+**NOTE:** I am fully aware of that there is login credentials for an Admin account in the source code. These are however just seed data and there is no live site where they can be used.
