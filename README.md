@@ -132,3 +132,5 @@ to your project file. This is however not necessary when using version 2.1 of th
 of the pool and forces you through a lot of new concepts. If you are not pretty
 well familiar with ASP.NET you will have a tough time following along. But the
 author promises to go through all the new concepts in detail in later chapters.
+
+**NOTE:** There is a bad bug in the IdentitySeedData.cs code in the book. It uses the *FindByIdAsync* method to try to find the admin user in the database. However, it uses the admin username for lookup, which has the effect that the lookup always fails. The correct method to use is *FindByNameAsync*.

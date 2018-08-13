@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using SportStore.Models;
 using System.Linq;
 
@@ -15,9 +16,11 @@ namespace SportStore.Controllers
             _cart = cart;
         }
 
+        [Authorize]
         public IActionResult List() => View(_repository.Orders.Where(o => !o.Shipped));
 
         [HttpPost]
+        [Authorize]
         public IActionResult MarkShipped(int orderId)
         {
             var order = _repository.Orders.FirstOrDefault(o => o.OrderId == orderId);
