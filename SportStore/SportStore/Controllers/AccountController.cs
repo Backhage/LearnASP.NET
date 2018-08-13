@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using SportStore.Models;
 using SportStore.Models.ViewModels;
 using System.Threading.Tasks;
 
@@ -15,6 +16,7 @@ namespace SportStore.Controllers
         public AccountController(UserManager<IdentityUser> userManager, SignInManager<IdentityUser> signInManager)
         {
             (_userManager, _signInManager) = (userManager, signInManager);
+            IdentitySeedData.EnsurePopulated(_userManager).Wait();
         }
 
         [AllowAnonymous]
